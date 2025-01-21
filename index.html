@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blavity inc</title>
+    <style>
+        * {
+            margin: 0
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #header-title {
+            margin-left: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-bottom: 35px;
+            margin-top: 45px;
+            color: black;
+        }
+
+        #nav {
+            list-style: none;
+            margin-top: 45px;
+
+        }
+
+        #nav>li {
+            display: inline;
+            padding: 11px 50px 11px 15px;
+
+        }
+
+        #arrow {
+            border: 30px 40px 30px 40px;
+            border-radius: 25px;
+            background-color: black;
+            color: white;
+            font-size: 25px;
+        }
+
+        #caption {
+            margin-top: 90px;
+            margin-left: 90px;
+            margin-bottom: 110px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 70px;
+
+        }
+
+        #botton {
+            margin: 0px 190px 30px 0px;
+            padding: 20px 25px 20px 25px;
+            display: inline;
+            background-color: #f05c34;
+            border: 50px 20px 50px 20px;
+            border-radius: 45px;
+        }
+
+        #sub-title {
+            font-size: 22px;
+            margin-top: 80px;
+            margin-bottom: 30px;
+            margin-left: 50px;
+
+        }
+
+        #caption-grouping {
+            display: flex;
+            margin-left: 50px;
+            margin-right: 35px;
+        }
+
+        .same {
+            margin: 0px 50px 25px 0px;
+            background-color: white;
+            box-shadow: 0 4px 15px rgb(0, 0, 0, 0.2);
+            border: 40px 40px 35px 40px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 90px;
+            border-bottom-left-radius: 45px;
+            border-bottom-right-radius: 45px;
+            text-align: center;
+            font-size: 20px;
+            height: 27rem;
+            width: 2450px;
+        }
+
+        .heading {
+            padding-bottom: 40px;
+            padding-top: 10px;
+            color: #f05c34;
+        }
+
+
+        #more-info {
+            padding-top: 100px;
+            margin-left: 990px;
+            text-transform: uppercase;
+            color: #f05c34;
+            border-bottom: 2px solid #f05c34;
+            display: inline;
+        }
+
+        #brand {
+            color: #f05c34;
+            font-weight: 400;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: italic;
+        }
+
+        #brand-text {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        #list-design {
+            list-style: none;
+            margin-left: 10px;
+        }
+
+        #list-design>li {
+            display: inline-block;
+            padding: 0px 20px 50px 2px;
+            font-size: 40px;
+            font-weight: 500;
+            font-style: italic;
+
+        }
+
+        .image-section {
+            position: relative;
+
+        }
+
+        .image-section>img {
+            width: 100%;
+            height: 600px;
+            border-radius: 0px 180px 0px 0px;
+            margin-top: 10px
+        }
+
+
+        #brand-picture {
+            position: absolute;
+            top: 15px;
+            left: 110px;
+            padding-top: 120px;
+            font-size: 65px;
+            font-weight: 400;
+            font-style: italic;
+            color: whitesmoke
+        }
+
+        .image-section2 {
+            position: absolute;
+            background-color: white;
+            height: 200px;
+            width: 80%;
+            margin-top: 80px;
+            top: 350px;
+            left: 150px;
+            border-radius: 200px 0px 0px 0px;
+        }
+
+        #image-text {
+            position: absolute;
+            top: 20px;
+            left: 85px;
+            font-size: 42px;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        #botton {
+            background-color: #f05c34;
+            border: 40px 40px 40px 40px;
+            border-radius: 40px;
+            font-size: 20px;
+            text-transform: uppercase;
+            padding: 20px 40px 20px 40px;
+            margin-left: 10px;
+        }
+
+        #press {
+            margin-top: 100px;
+            margin-left: 50px;
+            font-size: 40px;
+            font-style: italic;
+            font-weight: 400;
+            margin-bottom: 50px;
+        }
+
+        #general-image-div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #img-sec {
+            margin-left: 90px;
+            margin-bottom: 25px;
+        }
+
+        .small-pictures-div {
+            display: block;
+            position: absolute;
+            left: 750px;
+            bottom: 1050px;
+
+        }
+
+        #picture1 {
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        #picture2 {
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        #picture3 {
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        .picture-text {
+            font-size: 20px;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        #footer {
+            border: 80px 80px 80px 80px;
+            border-top-right-radius: 140px;
+            background-color: black;
+            padding-bottom: 200px;
+            color: white;
+            margin-top: 100px;
+        }
+
+        #blavity-logo {
+            margin: 0px 0px 80px 15px;
+            padding-top: 60px;
+        }
+
+        #list {
+            list-style: none;
+            display: flex;
+            font-size: 25px;
+            font-style: normal;
+            text-transform: capitalize;
+        }
+
+        #list1 {
+            padding-left: 100px;
+        }
+
+        #list2 {
+            list-style: none;
+            display: flex;
+            margin-top: 20px;
+            font-size: 25px;
+            font-style: normal;
+            text-transform: capitalize;
+        }
+
+        #li-3 {
+            padding-left: 160px;
+
+        }
+
+        #list3 {
+            list-style: none;
+            display: flex;
+            margin-top: 15px;
+            font-size: 25px;
+            font-style: normal;
+            text-transform: capitalize;
+        }
+
+        #li-4 {
+            padding-left: 105px;
+        }
+
+        #list4 {
+            list-style: none;
+            display: flex;
+            margin-top: 15px;
+            font-size: 25px;
+            font-style: normal;
+            text-transform: capitalize;
+        }
+
+        #li-5 {
+            padding-left: 65px;
+        }
+
+        #list5 {
+            list-style: none;
+            display: flex;
+            margin-top: 15px;
+            font-size: 25px;
+            font-style: normal;
+            text-transform: capitalize;
+        }
+
+        #li-6 {
+            padding-left: 140px;
+        }
+
+        #footer-maintext {
+            margin-left: 490px;
+            font-style: italic;
+            font-weight: 400;
+            margin-top: 65px;
+            font-size: 20px;
+        }
+
+        .footer-subtext .footer-botton {
+            background-color: #f1653f;
+            display: inline-flex;
+            text-transform: uppercase;
+            margin-left: 50px;
+            border-radius: 25px;
+            padding: 15px 30px 15px 20px;
+        }
+
+
+        .footer-subtext {
+            background-color: rgb(54, 54, 54);
+            display: inline-flex;
+            padding: 5px 5px 5px 0px;
+            border-radius: 35px;
+            margin-left: 450px;
+            margin: 90px 450px 30px;
+        }
+
+        #footer-subtext {
+            padding-right: 170px;
+            padding-top: 14px;
+        }
+
+
+        #logo-1 {
+            margin-left: 450px;
+            margin-top: 00px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header">
+        <h4 id="header-title">BLAVITY INC.</h4>
+        <ol id="nav">
+            <li>OUR SOLUTIONS</li>
+            <li>CASE STUDIES</li>
+            <li>ABOUT</li>
+            <li>CAREERS</li>
+            <li id="arrow">PARTNER WITH US &rarr;</li>
+        </ol>
+    </div>
+    <div id="caption">
+        <P>We build solutions for<br>Black audiences and enterprises<br>that want to reach them.</P>
+    </div>
+    <div id="botton">
+        <botton>PARTNER WITH US &rarr;</botton>
+    </div>
+
+    <h3 id="sub-title">OUR SOLUTIONS</h3>
+
+    <div id="caption-grouping">
+
+        <div class="same">
+            <h3 class="heading">Premium<br>Media Brands</h3>
+            <p>
+                Our Premium Media<br>Brands deliver digital<br>campaigns by strateg<br>ically distributing<br> content
+                across our
+                owned<br> platforms.
+            </p>
+        </div>
+        <div class="same">
+            <h3 class="heading">Ad Publisher<br>Solutions</h3>
+            <p>
+                Our Ad Publisher Solutions<br>make it easy for<br> advertisers to invest in<br>minority-owned and led
+                publishers.<br>Advertisers can programmatically<br>discover and reach multicultural<br>audiences.
+            </p>
+        </div>
+        <div class="same">
+            <h3 class="heading">Career & Talent<br> Solutions</h3>
+            <p>
+                Our Career & Talent <br>Solutions include a recruitment<br> platform and a global<br> gathering
+                connecting
+                a network<br>of inclusive tech companies,<br>profesionals, and innovators.
+            </p>
+        </div>
+    </div>
+    <h4 id="more-info">Learn More</h4> 
+    <div id="brand-content">
+        <h1 id="brand">OUR BRANDS</h1>
+        <p id="brand-text">We deliver culturally relevant content across a wide range of verticals.</p>
+    </div>
+    </div>
+    <div class="image-section">
+        <img src="Blavity Inc_files/3_reasons_DEI_programs_fail_and_how_you_can_prevent_it.webp">
+        <p id="brand-picture">We reach 100 million <br>consumers every month </p>
+        <div class="image-section2">
+            <p id="image-text">Connect With Black And Multicultural<br>Consumers On A Deep Level.<botton id="botton">
+                    About Us</botton>
+            </p>
+        </div>
+        <div>
+            <h3 id="press">Press</h3>
+        </div>
+
+        <div id="gemeral-image-div">
+            <div id="img-sec">
+                <img src="./Blavity Inc_files/3_reasons_DEI_programs_fail_and_how_you_can_prevent_it.webp"
+                    height="350px" width="450px">
+                <p class="picture-text ">3reasons DEI programs fail and how you can prevent it </p>
+            </div>
+
+            <div class="small-pictures-div">
+                <div id="picture1">
+                    <img src="./Blavity Inc_files/AFROTECH_600X300.png" height="130px" width="190px">
+                    <p class="picture-text">Blavity Inc. Forms The AFROTECH Advisory Board To Be A Driving Force For
+                        Innovation And
+                        Inclusivity In Tech</p>
+                </div>
+                <div id="picture2">
+                    <img src="./Blavity Inc_files/black-owned-publishers-collaborative-2023-600x315.jpg" height="130px"
+                        width="190px">
+                    <P class="picture-text">A New Cohort of Black Media Collectives Is Here</P>
+                </div>
+                <div id="picture3">
+                    <img src="./Blavity Inc_files/pexels-olanma-etigweuwa-3867522-scaled-e1694205718543-1.jpg"
+                        height="130px" width="190px">
+                    <p class="picture-text">Blavity Inc. Acquires RnB House Party To Launch Music Festival</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="footer">
+            <h2 id="blavity-logo">BLAVITY INC.</h2>
+            <ol id="list">
+                <li>our solutions</li>
+                <li id="list1">partner with us</li>
+
+            </ol>
+            <ol id="list2">
+                <li>careers</li>
+                <li id="li-3">affiliate partnership</li>
+            </ol>
+            <ol id="list3">
+                <li>case studies</li>
+                <li id="li-4">about</li>
+            </ol>
+
+            <ol id="list4">
+                <li>creator network</li>
+                <li id="li-5">news room</li>
+            </ol>
+
+            <ol id="list5">
+                <li>founders</li>
+                <li id="li-6">blog</li>
+            </ol>
+            <div id="footer-maintext">
+                <h2>Get our corporate Newsletter.</h2>
+            </div>
+            <div class="footer-subtext">
+                <h5 id="footer-subtext">Email address</h5>
+                <botton class="footer-botton">Subscribe</botton>
+
+            </div>
+            <div id="logo-1">
+                <img src="./Blavity Inc_files/SG_Logo-1-1024x214.webp" height="130px" width="320px">
+                <img src="./Blavity Inc_files/NMSDC_CERIFIED_2023-857x800-1.jpeg" height="90px" width="180px">
+                <img src="./Blavity Inc_files/logo-iab.webp">
+                <img src="./Blavity Inc_files/logo-iab.webp">
+                <img src="./Blavity Inc_files/logo-tag.webp">
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
